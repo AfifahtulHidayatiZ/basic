@@ -28,10 +28,6 @@ use kartik\date\DatePicker;
 
     <?= $form->field($model, 'angkatan')->textInput() ?>
 
-    <?= $form->field($model, 'divisi')->dropDownList(
-        array('1'=> 'Programming','2'=> 'Multimedia','3'=> 'Networking'))->label('Divisi'); ?>
-
-
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
     </div>

@@ -65,7 +65,7 @@ class CyberSearch extends cyber
 
         $query->andFilterWhere(['like', 'nama', $this->nama])
             ->andFilterWhere(['like', 'jekel', $this->jekel])
-            ->andFilterWhere(['like', 'divisi', $this->divisi]);
+            ->andFilterWhere(['like', 'divisi', $this->id_divisi]);
 
         return $dataProvider;
     }

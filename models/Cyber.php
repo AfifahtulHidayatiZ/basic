@@ -30,12 +30,12 @@ class Cyber extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['nama', 'tgl_lahir', 'jekel', 'angkatan', 'divisi'], 'required'],
+            [['nama', 'tgl_lahir', 'jekel', 'angkatan', 'id_divisi'], 'required'],
             [['tgl_lahir'], 'safe'],
             [['angkatan'], 'integer'],
             [['nama'], 'string', 'max' => 50],
             [['jekel'], 'string', 'max' => 5],
-            [['divisi'], 'string', 'max' => 20],
+            [['id_divisi'], 'integer'],
         ];
     }
 
@@ -50,7 +50,7 @@ class Cyber extends \yii\db\ActiveRecord
             'tgl_lahir' => 'Tgl Lahir',
             'jekel' => 'Jekel',
             'angkatan' => 'Angkatan',
-            'divisi' => 'Divisi',
+            'id_divisi' => 'Divisi',
         ];
     }
 }
