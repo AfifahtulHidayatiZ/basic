@@ -18,6 +18,7 @@ use yii\helpers\Url;
                 <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
             </div>
         </div>
+        
         <!-- search form -->
         <form action="#" method="get" class="sidebar-form">
             <div class="input-group">
